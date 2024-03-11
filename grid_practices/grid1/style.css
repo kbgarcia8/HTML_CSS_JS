@@ -1,0 +1,50 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+.container {
+    display: inline-grid;
+    gap: 15px;
+    grid-template: 100px 100px 100px 100px 100px 100px 100px 100px
+    / 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+}
+
+.layout {
+    border-radius: 20px;
+    font-size: 250%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#header {
+    grid-area:  1/1/2/11;
+    background-color: #016e26;
+}
+
+#sidebar {
+    grid-area: 2/1/8/3;
+    background-color: #2e3bf7;
+}
+
+#nav {
+    grid-area: 2/3/4/11;
+    background-color: #b600c7;
+}
+
+#article {
+    grid-area: 4/3/8/11;
+    background-color: #29022c;
+}
+
+#footer {
+    grid-area: 8/1/9/11;
+    background-color: gray;
+}
+p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
