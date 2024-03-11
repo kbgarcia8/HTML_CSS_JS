@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Profile Dashboard</title>
+   <!--Roboto Font-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   <style>
+    @import url('style.css');
+   </style>
+ </head>
+ <body>
+   <div class="page">
+     <div class="layout" id="sidebar">
+       <div id="sidebar-top">
+         <svg style="width: 40px; height: 40px; fill: white; padding-right: 15px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>view-dashboard</title><path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" /></svg>
+         Dashboard
+       </div>
+       <div id="sidebar-panel">
+         <svg id="sidebar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>home-variant</title><path d="M12,3L20,9V21H15V14H9V21H4V9L12,3Z" /></svg>
+         Home
+       </div>
+       <div id="sidebar-panel">
+         <svg id="sidebar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>card-account-details-outline</title><path d="M22,3H2C0.91,3.04 0.04,3.91 0,5V19C0.04,20.09 0.91,20.96 2,21H22C23.09,20.96 23.96,20.09 24,19V5C23.96,3.91 23.09,3.04 22,3M22,19H2V5H22V19M14,17V15.75C14,14.09 10.66,13.25 9,13.25C7.34,13.25 4,14.09 4,15.75V17H14M9,7A2.5,2.5 0 0,0 6.5,9.5A2.5,2.5 0 0,0 9,12A2.5,2.5 0 0,0 11.5,9.5A2.5,2.5 0 0,0 9,7M14,7V8H20V7H14M14,9V10H20V9H14M14,11V12H18V11H14" /></svg>
+         Profile
+       </div>
+       <div id="sidebar-panel">
+         <svg id="sidebar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>message</title><path d="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4C22,2.89 21.1,2 20,2Z" /></svg>
+         Messages
+       </div>
+       <div id="sidebar-panel">
+         <svg id="sidebar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>clock-time-five</title><path d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12S17.5 2 12 2M14 17L11 11.8V7H12.5V11.4L15.3 16.3L14 17Z" /></svg>
+         History
+       </div>
+       <div id="sidebar-panel">
+         <svg id="sidebar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>note-multiple</title><path d="M16,9H21.5L16,3.5V9M7,2H17L23,8V18A2,2 0 0,1 21,20H7C5.89,20 5,19.1 5,18V4A2,2 0 0,1 7,2M3,6V22H21V24H3A2,2 0 0,1 1,22V6H3Z" /></svg>
+         Tasks
+       </div>
+       <div id="sidebar-panel">
+         <svg id="sidebar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account-group</title><path d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z" /></svg>
+         Communities
+       </div>
+       <div id="sidebar-panel"></div>
+       <div id="sidebar-panel"></div>
+       <div id="sidebar-panel">
+         <svg id="sidebar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>cog</title><path d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z" /></svg>
+         Settings
+       </div>
+       <div id="sidebar-panel">
+         <svg id="sidebar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>help-box-outline</title><path d="M11 18H13V16H11V18M12 6C9.8 6 8 7.8 8 10H10C10 8.9 10.9 8 12 8S14 8.9 14 10C14 12 11 11.8 11 15H13C13 12.8 16 12.5 16 10C16 7.8 14.2 6 12 6M19 5V19H5V5H19M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3Z" /></svg>
+         Support
+       </div>
+       <div id="sidebar-panel">
+         <svg id="sidebar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>shield-check-outline</title><path d="M21,11C21,16.55 17.16,21.74 12,23C6.84,21.74 3,16.55 3,11V5L12,1L21,5V11M12,21C15.75,20 19,15.54 19,11.22V6.3L12,3.18L5,6.3V11.22C5,15.54 8.25,20 12,21M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9" /></svg>
+         Privacy
+       </div>
+       <div id="sidebar-panel"></div>
+       <div id="sidebar-panel"></div>
+       <div id="sidebar-panel"></div>
+       <div id="sidebar-panel"></div>
+       <div id="sidebar-panel"></div>
+       <div id="sidebar-panel"></div>
+       <div id="sidebar-panel"></div>
+       <div id="sidebar-panel"></div>
+       <div id="sidebar-panel"></div>
+     </div>
+     <div class="layout" id="topbar">
+       <div id="topbar-searchbar">
+         <svg style="fill: black; width: 30px; height: 30px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>magnify</title><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" /></svg>
+         <form class="myForms" action="#" method="post">
+         <input type="text" id="search" placeholder="Search...">
+         </form>
+       </div>
+       <div id="topbar-notif-panel" style="justify-content: right; padding-right: 50px; padding-top: 20px;">
+         <svg style="width: 25px; height: 25px; padding-left: 50%;"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>bell-ring-outline</title><path d="M10,21H14A2,2 0 0,1 12,23A2,2 0 0,1 10,21M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M17,11A5,5 0 0,0 12,6A5,5 0 0,0 7,11V18H17V11M19.75,3.19L18.33,4.61C20.04,6.3 21,8.6 21,11H23C23,8.07 21.84,5.25 19.75,3.19M1,11H3C3,8.6 3.96,6.3 5.67,4.61L4.25,3.19C2.16,5.25 1,8.07 1,11Z" /></svg>
+         <img src="./images/cat.png" alt="cat_notif_icon" style="width: 40px; height: 40px; padding-left: 20px; padding-right: 20px;">
+         <p style="font-family: Roboto; font-size: 12px; font-weight: 900;">Karl Brian Garcia</p>
+       </div>
+       <div id="topbar-username-panel" style="padding-top: 10px; padding-bottom: 10px;">
+         <img src="./images/cat.png" alt="cat_notif_icon" style="width: 60px; height: 60px; padding-left: 50px; padding-right: 20px;">
+         <p style="font-family: Roboto; font-size: 12px; font-weight: 900; text-align: left; line-height: 2;">Hi there,<br><name style="font-size: 18px;">Karl Brian Garcia (@kvgarcia)</name></p>
+       </div>
+       <div id="topbar-buttons">
+         <button type="button">New</button>
+         <button type="button">Upload</button>
+         <button type="button">Share</button>
+       </div>
+     </div>
+     <div class="layout" id="workspace">
+       <div id="projects">
+         <div id="projects-header">Your Projects</div>
+         <div id="projects-boxes">
+           <div id="project-box">
+             <div style="display: flex; align-items: end;">Super Cool Project</div>
+             <p style="font-size: 12px; font-family: Roboto; text-align: left; font-weight: 400;" >
+               Another writing challenge can be to take the individual sentences in the random paragraph and incorporate a single sentence from that into a new paragraph to create a short story. Unlike the random sentence generator, the sentences from the random paragraph will have some connection to one another so it will be a bit different. You also won't know exactly how many sentences will appear in the random paragraph.
+             </p>
+             <div id="projects-icon">
+              <svg style="width: 20px; height: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>star-plus-outline</title><path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" /></svg>
+              <svg style="width: 20px; height: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>eye-plus-outline</title><path d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" /></svg>
+              <svg style="width: 20px; height: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>share-variant-outline</title><path d="M18 16.08C17.24 16.08 16.56 16.38 16.04 16.85L8.91 12.7C8.96 12.47 9 12.24 9 12S8.96 11.53 8.91 11.3L15.96 7.19C16.5 7.69 17.21 8 18 8C19.66 8 21 6.66 21 5S19.66 2 18 2 15 3.34 15 5C15 5.24 15.04 5.47 15.09 5.7L8.04 9.81C7.5 9.31 6.79 9 6 9C4.34 9 3 10.34 3 12S4.34 15 6 15C6.79 15 7.5 14.69 8.04 14.19L15.16 18.34C15.11 18.55 15.08 18.77 15.08 19C15.08 20.61 16.39 21.91 18 21.91S20.92 20.61 20.92 19C20.92 17.39 19.61 16.08 18 16.08M18 4C18.55 4 19 4.45 19 5S18.55 6 18 6 17 5.55 17 5 17.45 4 18 4M6 13C5.45 13 5 12.55 5 12S5.45 11 6 11 7 11.45 7 12 6.55 13 6 13M18 20C17.45 20 17 19.55 17 19S17.45 18 18 18 19 18.45 19 19 18.55 20 18 20Z" /></svg>
+            </div>
+           </div>
+           <div id="project-box">
+             <div style="display: flex; align-items: end;">Less Cool Project</div>
+             <p style="font-size: 12px; font-family: Roboto; text-align: left; font-weight: 400;" >
+               There are usually about 200 words in a paragraph, but this can vary widely. Most paragraphs focus on a single idea that's expressed with an introductory sentence, then followed by two or more supporting sentences about the idea.
+             </p>
+             <div id="projects-icon">
+              <svg style="width: 20px; height: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>star-plus-outline</title><path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" /></svg>
+              <svg style="width: 20px; height: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>eye-plus-outline</title><path d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" /></svg>
+              <svg style="width: 20px; height: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>share-variant-outline</title><path d="M18 16.08C17.24 16.08 16.56 16.38 16.04 16.85L8.91 12.7C8.96 12.47 9 12.24 9 12S8.96 11.53 8.91 11.3L15.96 7.19C16.5 7.69 17.21 8 18 8C19.66 8 21 6.66 21 5S19.66 2 18 2 15 3.34 15 5C15 5.24 15.04 5.47 15.09 5.7L8.04 9.81C7.5 9.31 6.79 9 6 9C4.34 9 3 10.34 3 12S4.34 15 6 15C6.79 15 7.5 14.69 8.04 14.19L15.16 18.34C15.11 18.55 15.08 18.77 15.08 19C15.08 20.61 16.39 21.91 18 21.91S20.92 20.61 20.92 19C20.92 17.39 19.61 16.08 18 16.08M18 4C18.55 4 19 4.45 19 5S18.55 6 18 6 17 5.55 17 5 17.45 4 18 4M6 13C5.45 13 5 12.55 5 12S5.45 11 6 11 7 11.45 7 12 6.55 13 6 13M18 20C17.45 20 17 19.55 17 19S17.45 18 18 18 19 18.45 19 19 18.55 20 18 20Z" /></svg>
+            </div>
+           </div>
+           <div id="project-box">
+             <div style="display: flex; align-items: end;">Impossible App</div>
+             <p style="font-size: 12px; font-family: Roboto; text-align: left; font-weight: 400;" >
+               If you're looking for random paragraphs, you've come to the right place. When a random word or a random sentence isn't quite enough, the next logical step is to find a random paragraph. We created the Random Paragraph Generator with you in mind.
+             </p>
+             <div id="projects-icon">
+              <svg style="width: 20px; height: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>star-plus-outline</title><path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" /></svg>
+              <svg style="width: 20px; height: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>eye-plus-outline</title><path d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" /></svg>
+              <svg style="width: 20px; height: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>share-variant-outline</title><path d="M18 16.08C17.24 16.08 16.56 16.38 16.04 16.85L8.91 12.7C8.96 12.47 9 12.24 9 12S8.96 11.53 8.91 11.3L15.96 7.19C16.5 7.69 17.21 8 18 8C19.66 8 21 6.66 21 5S19.66 2 18 2 15 3.34 15 5C15 5.24 15.04 5.47 15.09 5.7L8.04 9.81C7.5 9.31 6.79 9 6 9C4.34 9 3 10.34 3 12S4.34 15 6 15C6.79 15 7.5 14.69 8.04 14.19L15.16 18.34C15.11 18.55 15.08 18.77 15.08 19C15.08 20.61 16.39 21.91 18 21.91S20.92 20.61 20.92 19C20.92 17.39 19.61 16.08 18 16.08M18 4C18.55 4 19 4.45 19 5S18.55 6 18 6 17 5.55 17 5 17.45 4 18 4M6 13C5.45 13 5 12.55 5 12S5.45 11 6 11 7 11.45 7 12 6.55 13 6 13M18 20C17.45 20 17 19.55 17 19S17.45 18 18 18 19 18.45 19 19 18.55 20 18 20Z" /></svg>
+            </div>
+           </div>
+           <div id="project-box">
+             <div style="display: flex; align-items: end;">Easy Peasy App</div>
+             <p style="font-size: 12px; font-family: Roboto; text-align: left; font-weight: 400;" >
+               Another productive way to use this tool to begin a daily writing routine. One way is to generate a random paragraph with the intention to try to rewrite it while still keeping the original meaning. The purpose here is to just get the writing started so that when the writer goes onto their day's writing projects, words are already flowing from their fingers.
+             </p>
+             <div id="projects-icon">
+              <svg style="width: 20px; height: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>star-plus-outline</title><path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" /></svg>
+              <svg style="width: 20px; height: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>eye-plus-outline</title><path d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" /></svg>
+              <svg style="width: 20px; height: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>share-variant-outline</title><path d="M18 16.08C17.24 16.08 16.56 16.38 16.04 16.85L8.91 12.7C8.96 12.47 9 12.24 9 12S8.96 11.53 8.91 11.3L15.96 7.19C16.5 7.69 17.21 8 18 8C19.66 8 21 6.66 21 5S19.66 2 18 2 15 3.34 15 5C15 5.24 15.04 5.47 15.09 5.7L8.04 9.81C7.5 9.31 6.79 9 6 9C4.34 9 3 10.34 3 12S4.34 15 6 15C6.79 15 7.5 14.69 8.04 14.19L15.16 18.34C15.11 18.55 15.08 18.77 15.08 19C15.08 20.61 16.39 21.91 18 21.91S20.92 20.61 20.92 19C20.92 17.39 19.61 16.08 18 16.08M18 4C18.55 4 19 4.45 19 5S18.55 6 18 6 17 5.55 17 5 17.45 4 18 4M6 13C5.45 13 5 12.55 5 12S5.45 11 6 11 7 11.45 7 12 6.55 13 6 13M18 20C17.45 20 17 19.55 17 19S17.45 18 18 18 19 18.45 19 19 18.55 20 18 20Z" /></svg>
+            </div>
+           </div>
+           <div id="project-box">
+             <div style="display: flex; align-items: end;">Ad Blocker</div>
+             <p style="font-size: 12px; font-family: Roboto; text-align: left; font-weight: 400;" >
+               A random paragraph can also be an excellent way for a writer to tackle writers' block. Writing block can often happen due to being stuck with a current project that the writer is trying to complete. By inserting a completely random paragraph from which to begin, it can take down some of the issues that may have been causing the writers' block in the first place.
+             </p>
+             <div id="projects-icon">
+              <svg style="width: 20px; height: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>star-plus-outline</title><path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" /></svg>
+              <svg style="width: 20px; height: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>eye-plus-outline</title><path d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" /></svg>
+              <svg style="width: 20px; height: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>share-variant-outline</title><path d="M18 16.08C17.24 16.08 16.56 16.38 16.04 16.85L8.91 12.7C8.96 12.47 9 12.24 9 12S8.96 11.53 8.91 11.3L15.96 7.19C16.5 7.69 17.21 8 18 8C19.66 8 21 6.66 21 5S19.66 2 18 2 15 3.34 15 5C15 5.24 15.04 5.47 15.09 5.7L8.04 9.81C7.5 9.31 6.79 9 6 9C4.34 9 3 10.34 3 12S4.34 15 6 15C6.79 15 7.5 14.69 8.04 14.19L15.16 18.34C15.11 18.55 15.08 18.77 15.08 19C15.08 20.61 16.39 21.91 18 21.91S20.92 20.61 20.92 19C20.92 17.39 19.61 16.08 18 16.08M18 4C18.55 4 19 4.45 19 5S18.55 6 18 6 17 5.55 17 5 17.45 4 18 4M6 13C5.45 13 5 12.55 5 12S5.45 11 6 11 7 11.45 7 12 6.55 13 6 13M18 20C17.45 20 17 19.55 17 19S17.45 18 18 18 19 18.45 19 19 18.55 20 18 20Z" /></svg>
+            </div>
+           </div>
+           <div id="project-box">
+             <div style="display: flex; align-items: end;">Money Maker</div>
+             <p style="font-size: 12px; font-family: Roboto; text-align: left; font-weight: 400;" >
+               Generating random paragraphs can be an excellent way for writers to get their creative flow going at the beginning of the day. The writer has no idea what topic the random paragraph will be about when it appears. This forces the writer to use creativity to complete one of three common writing challenges.
+             </p>
+             <div id="projects-icon">
+              <svg style="width: 20px; height: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>star-plus-outline</title><path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" /></svg>
+              <svg style="width: 20px; height: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>eye-plus-outline</title><path d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" /></svg>
+              <svg style="width: 20px; height: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>share-variant-outline</title><path d="M18 16.08C17.24 16.08 16.56 16.38 16.04 16.85L8.91 12.7C8.96 12.47 9 12.24 9 12S8.96 11.53 8.91 11.3L15.96 7.19C16.5 7.69 17.21 8 18 8C19.66 8 21 6.66 21 5S19.66 2 18 2 15 3.34 15 5C15 5.24 15.04 5.47 15.09 5.7L8.04 9.81C7.5 9.31 6.79 9 6 9C4.34 9 3 10.34 3 12S4.34 15 6 15C6.79 15 7.5 14.69 8.04 14.19L15.16 18.34C15.11 18.55 15.08 18.77 15.08 19C15.08 20.61 16.39 21.91 18 21.91S20.92 20.61 20.92 19C20.92 17.39 19.61 16.08 18 16.08M18 4C18.55 4 19 4.45 19 5S18.55 6 18 6 17 5.55 17 5 17.45 4 18 4M6 13C5.45 13 5 12.55 5 12S5.45 11 6 11 7 11.45 7 12 6.55 13 6 13M18 20C17.45 20 17 19.55 17 19S17.45 18 18 18 19 18.45 19 19 18.55 20 18 20Z" /></svg>
+            </div>
+           </div>
+         </div>
+       </div>
+       <div class="layout" id="right-bar">
+        <div id="right-bar-header" style="grid-row: 1/2;">Announcements</div>
+        <div id="announcement-panel">
+          <div id="announcement-panel-box">
+            <div style="display: flex; font-size: 14px; font-weight: 900;">Site Maintenance</div>
+             <p style="font-size: 10px; text-align: left; font-weight: 300;" >
+               This is just a random text and has no definite meaning but then again I can give you one. Site maintenance pertains to the continuous checking if the site still works as needed and improvement if any.
+             </p>
+          </div>
+          <div id="announcement-panel-box">
+            <div style="display: flex; font-size: 14px; font-weight: 900;">Community Share Day</div>
+             <p style="font-size: 10px; text-align: left; font-weight: 300;" >
+               This day is established to commomerate the giving heart of a human. Everyone can give whatever they think will make another happy.
+             </p>
+          </div>
+          <div id="announcement-panel-box" style="border-bottom: none;">
+            <div style="display: flex; font-size: 14px; font-weight: 900;">Updated Privacy Policy</div>
+             <p style="font-size: 10px; text-align: left; font-weight: 300;" >
+               Well, this is the section that nobody reads anyway but let me tell you its your loss for not knowing what data we can protect. If I were you I would take this section seriously now read it! Chop chop!
+             </p>
+          </div>
+        </div>
+        <div id="right-bar-header" style="grid-row: 3/4;">Trending</div>
+        <div id="trending-panel">
+          <div id="trending-panel-box" style="border-bottom: none;">
+            <svg style="width: 50px; height: 50px;" data-name="Layer 1" id="Layer_1" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#4bc190;}.cls-2{fill:#356cb6;opacity:0.3;}.cls-3{fill:#393c54;}.cls-4{fill:#f85565;}.cls-5{fill:#fbc0aa;}.cls-6{fill:#f8dc25;}.cls-7{fill:#f2bc0f;}.cls-8{fill:#fff;}.cls-11,.cls-13,.cls-14,.cls-15,.cls-9{fill:none;stroke-linecap:round;}.cls-14,.cls-9{stroke:#fbc0aa;}.cls-13,.cls-14,.cls-15,.cls-9{stroke-linejoin:round;}.cls-9{stroke-width:12px;}.cls-10{fill:#ffd8c9;}.cls-11{stroke:#fff;stroke-miterlimit:10;stroke-width:3.68px;opacity:0.1;}.cls-12{fill:#515570;}.cls-13,.cls-15{stroke:#515570;stroke-width:2px;}.cls-14{stroke-width:4.71px;}.cls-15{opacity:0.2;}</style></defs><title/><circle class="cls-1" cx="64" cy="64" r="60"/><circle class="cls-2" cx="64" cy="64" r="48"/><path class="cls-3" d="M99,82a4,4,0,0,1-4-4V34h0a13,13,0,0,0-25.9,0h0l6,48a12,12,0,0,0,24,0Z"/><circle class="cls-4" cx="75" cy="36" r="10"/><path class="cls-3" d="M63,28h0A29.41,29.41,0,0,1,92.41,57.41v6.12A10.94,10.94,0,0,1,81.47,74.47H44.53A10.94,10.94,0,0,1,33.59,63.53V57.41A29.41,29.41,0,0,1,63,28Z"/><circle class="cls-5" cx="85.98" cy="74.31" r="6.43"/><path class="cls-6" d="M64,124a59.62,59.62,0,0,0,33-9.92l-2.66-7.44A10,10,0,0,0,85,100H41.05a10,10,0,0,0-9.42,6.64L29.36,113A59.74,59.74,0,0,0,64,124Z"/><path class="cls-7" d="M82.92,100H43.08a20,20,0,0,0,39.84,0Z"/><path class="cls-8" d="M72,101.25a9,9,0,0,1-18,0c0-5,4-3,9-3S72,96.28,72,101.25Z"/><line class="cls-9" x1="63" x2="63" y1="87.75" y2="101.5"/><circle class="cls-5" cx="40.02" cy="74.31" r="6.43"/><path class="cls-10" d="M63,98.84a23,23,0,0,1-23-23V60.76a23,23,0,0,1,46,0V75.87A23,23,0,0,1,63,98.84Z"/><path class="cls-11" d="M44.82,51A19.9,19.9,0,0,1,62.4,38.54"/><path class="cls-12" d="M88.82,58.82A25.82,25.82,0,0,0,62.27,33c-14.06.39-25.09,12.28-25.09,26.35v4a4.83,4.83,0,0,0,1.48,3.51,5.93,5.93,0,0,0,1.36,1V64a4,4,0,0,1,4-4h5.38a1,1,0,0,0,.9-.55L52,56l1.72,3.45a1,1,0,0,0,.9.55H82a4,4,0,0,1,4,4v3.89a5.93,5.93,0,0,0,1.36-1,4.83,4.83,0,0,0,1.48-3.51Z"/><path class="cls-13" d="M70.67,75.28a3,3,0,0,1,6,0"/><line class="cls-14" x1="62.5" x2="62.5" y1="77.5" y2="81.5"/><line class="cls-15" x1="72" x2="79" y1="68" y2="68"/><path class="cls-13" d="M55,75.28a3,3,0,0,0-6,0"/><line class="cls-15" x1="54" x2="47" y1="68" y2="68"/><path class="cls-3" d="M70.55,86a1,1,0,0,1,.94,1.07,8.56,8.56,0,0,1-17,0A1,1,0,0,1,55.45,86Z"/><path class="cls-4" d="M58,92.91a8.52,8.52,0,0,0,10.08,0C67,91.16,65.17,91,63,91S59,91.16,58,92.91Z"/><path class="cls-8" d="M68,88H58a1.84,1.84,0,0,1-1.73-2H69.77A1.84,1.84,0,0,1,68,88Z"/></svg>
+            <div style="display: flex; flex-wrap: wrap;">
+              <div style="display: flex; font-size: 12px; font-weight: 700; align-items: end;">@tegan</div>
+              <div style="flex-basis: 100%; font-size: 10px; text-align: left; font-weight: 300; height: fit-content;" >World Peace Builder</div>
+            </div>
+            </div>
+          <div id="trending-panel-box" style="border-bottom: none;">
+            <svg style="width: 50px; height: 50px;"  data-name="Layer 1" id="Layer_1" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#4bc190;}.cls-12,.cls-2{fill:#356cb6;}.cls-2{opacity:0.3;}.cls-3{fill:#fff;}.cls-4{fill:#fbc0aa;}.cls-5{fill:#515570;}.cls-10,.cls-6{fill:none;stroke:#fbc0aa;stroke-linecap:round;stroke-linejoin:round;}.cls-6{stroke-width:20px;}.cls-7,.cls-8{fill:#393c54;}.cls-12,.cls-8{opacity:0.1;}.cls-9{fill:#ffd8c9;}.cls-10{stroke-width:2px;}.cls-11{fill:#f85565;}</style></defs><title/><circle class="cls-1" cx="64" cy="64" r="60"/><circle class="cls-2" cx="64" cy="64" r="48"/><circle class="cls-3" cx="30.76" cy="59.37" r="10"/><circle class="cls-3" cx="97.24" cy="59.37" r="10"/><circle class="cls-3" cx="32.76" cy="41.77" r="12.43"/><circle class="cls-3" cx="95.24" cy="41.77" r="12.43"/><circle class="cls-3" cx="44.5" cy="25.34" r="12.43"/><circle class="cls-3" cx="83.5" cy="25.34" r="12.43"/><circle class="cls-4" cx="91.32" cy="64.43" r="7.93"/><path class="cls-3" d="M64,124.1a59.78,59.78,0,0,0,40-15.28l-2.39-5.68c-1.71-4-6.22-6.64-11.29-6.64H37.69c-5.07,0-9.58,2.66-11.29,6.64L24,108.82A59.78,59.78,0,0,0,64,124.1Z"/><path class="cls-5" d="M79,96.5H48.85A15.07,15.07,0,0,0,79,96.5Z"/><line class="cls-6" x1="64" x2="64" y1="84.75" y2="98.5"/><path class="cls-7" d="M64,113l9.66,3.51a1,1,0,0,0,1.34-.94V104.43a1,1,0,0,0-1.34-.94L64,107Z"/><path class="cls-7" d="M64,113l-9.66,3.51a1,1,0,0,1-1.34-.94V104.43a1,1,0,0,1,1.34-.94L64,107Z"/><circle class="cls-7" cx="64" cy="110" r="5"/><path class="cls-3" d="M64,103.25a11,11,0,0,1-10.78-8.8,11.4,11.4,0,0,0-.22,2.2,11,11,0,0,0,22,0,11.4,11.4,0,0,0-.22-2.2A11,11,0,0,1,64,103.25Z"/><path class="cls-8" d="M64,103.25a11,11,0,0,1-10.78-8.8,11.4,11.4,0,0,0-.22,2.2,11,11,0,0,0,22,0,11.4,11.4,0,0,0-.22-2.2A11,11,0,0,1,64,103.25Z"/><path class="cls-3" d="M72.78,101.1,64,105.74l-8.78-4.64a.9.9,0,0,0-1.22.7v8.4a.9.9,0,0,0,1.22.7L64,106.26l8.78,4.64a.9.9,0,0,0,1.22-.7v-8.4A.9.9,0,0,0,72.78,101.1Z"/><path class="cls-8" d="M72.78,101.1,64,105.74l-8.78-4.64a.9.9,0,0,0-1.22.7v8.4a.9.9,0,0,0,1.22.7L64,106.26l8.78,4.64a.9.9,0,0,0,1.22-.7v-8.4A.9.9,0,0,0,72.78,101.1Z"/><circle class="cls-4" cx="36.68" cy="64.43" r="7.93"/><path class="cls-9" d="M64,98.37A28.31,28.31,0,0,1,35.68,70.05V55.43a28.32,28.32,0,1,1,56.64,0V70.05A28.31,28.31,0,0,1,64,98.37Z"/><path class="cls-10" d="M60,94a7,7,0,0,1,8,0"/><path class="cls-7" d="M71.55,80a1,1,0,0,1,.94,1.07,8.56,8.56,0,0,1-17,0A1,1,0,0,1,56.45,80Z"/><path class="cls-11" d="M64,92h0a4,4,0,0,1-4-4V77h8V88A4,4,0,0,1,64,92Z"/><path class="cls-3" d="M51.25,82.26C51.25,76.59,56.93,72,63.92,72s12.67,4.59,12.67,10.26"/><path class="cls-4" d="M64,77h0a5,5,0,0,1-5-5V57H69V72A5,5,0,0,1,64,77Z"/><circle class="cls-7" cx="50" cy="62.51" r="3.15"/><line class="cls-10" x1="56" x2="72" y1="45" y2="45"/><ellipse class="cls-3" cx="63.91" cy="24.95" rx="18.28" ry="16.82"/><path class="cls-12" d="M80.83,18.58c-.41,10.66-9.9,19.19-21.58,19.19A23.05,23.05,0,0,1,50,35.83a18.9,18.9,0,0,0,13.93,5.94C74,41.77,82.19,34.24,82.19,25A15.72,15.72,0,0,0,80.83,18.58Z"/><circle class="cls-7" cx="78" cy="62.51" r="3.15"/><path class="cls-3" d="M87,53.77c-.4,1.69-10.86.65-12.55.25a3.15,3.15,0,1,1,1.46-6.12C77.58,48.3,87.38,52.08,87,53.77Z"/><path class="cls-3" d="M41,53.77c.4,1.69,10.86.65,12.55.25a3.15,3.15,0,0,0-1.46-6.12C50.42,48.3,40.62,52.08,41,53.77Z"/><line class="cls-10" x1="75" x2="81" y1="69" y2="69"/><line class="cls-10" x1="47" x2="53" y1="69" y2="69"/><path class="cls-7" d="M104,108.82l-2.39-5.68c-1.71-4-6.22-6.64-11.29-6.64H77l-.4,26.26A59.82,59.82,0,0,0,104,108.82Z"/><path class="cls-7" d="M23.59,108.82,26,103.14c1.71-4,6.23-6.64,11.29-6.64H50.59l.4,26.26A59.82,59.82,0,0,1,23.59,108.82Z"/></svg>
+            <div style="display: flex; flex-wrap: wrap;">
+              <div style="display: flex; font-size: 12px; font-weight: 700; align-items: end;">@morgan</div>
+              <div style="flex-basis: 100%; font-size: 10px; text-align: left; font-weight: 300; height: fit-content;" >Super Cloud Project</div>
+            </div>
+            </div>
+          <div id="trending-panel-box" style="border-bottom: none;">
+            <?xml version="1.0" ?><svg style="width: 50px; height: 50px;"  data-name="Layer 1" id="Layer_1" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#ff8475;}.cls-14,.cls-17,.cls-2{fill:#f85565;}.cls-2,.cls-4{opacity:0.4;}.cls-3{fill:#7f3838;}.cls-4{fill:#393c54;}.cls-5{fill:#fbc0aa;}.cls-6{fill:#4bc190;}.cls-7{fill:#356cb6;opacity:0.3;}.cls-8{fill:#fff;}.cls-12,.cls-15,.cls-16,.cls-9{fill:none;stroke-linecap:round;}.cls-15,.cls-9{stroke:#fbc0aa;}.cls-15,.cls-16,.cls-9{stroke-linejoin:round;}.cls-9{stroke-width:14px;}.cls-10{fill:#ffd8c9;}.cls-11{fill:#bc5b57;}.cls-12{stroke:#fff;stroke-miterlimit:10;}.cls-12,.cls-16{stroke-width:2px;}.cls-12,.cls-14{opacity:0.1;}.cls-13{fill:#515570;}.cls-15{stroke-width:4px;}.cls-16{stroke:#515570;opacity:0.2;}</style></defs><title/><circle class="cls-1" cx="64" cy="64" r="60"/><circle class="cls-2" cx="64" cy="64" r="48"/><path class="cls-3" d="M64,14h0A32,32,0,0,1,96,46V87a6,6,0,0,1-6,6H38a6,6,0,0,1-6-6V46A32,32,0,0,1,64,14Z"/><path class="cls-4" d="M62.73,22h2.54A23.73,23.73,0,0,1,89,45.73V88.55A4.45,4.45,0,0,1,84.55,93H43.45A4.45,4.45,0,0,1,39,88.55V45.73A23.73,23.73,0,0,1,62.73,22Z"/><circle class="cls-5" cx="89" cy="65" r="7"/><path class="cls-6" d="M64,124a59.67,59.67,0,0,0,34.69-11.06l-3.32-9.3A10,10,0,0,0,86,97H42.05a10,10,0,0,0-9.42,6.64l-3.32,9.3A59.67,59.67,0,0,0,64,124Z"/><path class="cls-7" d="M45,110l5.55,2.92L48,121.84a60.14,60.14,0,0,0,9,1.74V96.5L44.62,106.75A2,2,0,0,0,45,110Z"/><path class="cls-7" d="M71,96.5v27.09a60.14,60.14,0,0,0,9-1.74l-2.54-8.93L83,110a2,2,0,0,0,.41-3.25Z"/><path class="cls-8" d="M57,123.68a58.54,58.54,0,0,0,14,0V98H57Z"/><line class="cls-9" x1="64" x2="64" y1="88.75" y2="98.5"/><circle class="cls-5" cx="39" cy="65" r="7"/><path class="cls-10" d="M64,91A25,25,0,0,1,39,66V49.52a25,25,0,1,1,50,0V66A25,25,0,0,1,64,91Z"/><path class="cls-11" d="M91.49,51.12V46.4c0-14.95-11.71-27.61-26.66-28A27.51,27.51,0,0,0,36.51,45.82v5.33a2,2,0,0,0,2,2h6.81a8,8,0,0,0,6.5-3.33l4.94-6.88h0a18.45,18.45,0,0,1,1.37,1.63A22.84,22.84,0,0,0,76,53.15H89.45A2,2,0,0,0,91.49,51.12Z"/><path class="cls-12" d="M62.76,36.94C67,45.68,73.47,47.15,78.85,47.15h5"/><path class="cls-12" d="M71,35c2.52,5.22,6.39,6.09,9.6,6.09h3"/><circle class="cls-13" cx="76" cy="62.28" r="3"/><circle class="cls-13" cx="52" cy="62.28" r="3"/><ellipse class="cls-14" cx="50.42" cy="69.67" rx="4.58" ry="2.98"/><ellipse class="cls-14" cx="77.58" cy="69.67" rx="4.58" ry="2.98"/><line class="cls-15" x1="64" x2="64" y1="67" y2="71"/><line class="cls-16" x1="55" x2="45.75" y1="56" y2="56"/><line class="cls-16" x1="82" x2="72.75" y1="56" y2="56"/><path class="cls-2" d="M64,84c5,0,7-3,7-3H57S59,84,64,84Z"/><path class="cls-17" d="M65.07,78.93l-.55.55a.73.73,0,0,1-1,0l-.55-.55c-1.14-1.14-2.93-.93-4.27.47L57,81H71l-1.66-1.6C68,78,66.21,77.79,65.07,78.93Z"/></svg>
+            <div style="display: flex; flex-wrap: wrap;">
+              <div style="display: flex; font-size: 12px; font-weight: 700; align-items: end;">@kendall</div>
+              <div style="flex-basis: 100%; font-size: 10px; text-align: left; font-weight: 300; height: fit-content;" >Life Changing App</div>
+            </div>
+            </div>
+          <div id="trending-panel-box" style="border-bottom: none;">
+            <?xml version="1.0" ?><svg style="width: 50px; height: 50px;"  data-name="Layer 1" id="Layer_1" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#4bc190;}.cls-2{fill:#356cb6;opacity:0.3;}.cls-3{fill:#393c54;}.cls-4{fill:#f85565;}.cls-5{fill:#fbc0aa;}.cls-6{fill:#f8dc25;}.cls-7{fill:#f2bc0f;}.cls-8{fill:#fff;}.cls-11,.cls-13,.cls-14,.cls-15,.cls-9{fill:none;stroke-linecap:round;}.cls-14,.cls-9{stroke:#fbc0aa;}.cls-13,.cls-14,.cls-15,.cls-9{stroke-linejoin:round;}.cls-9{stroke-width:12px;}.cls-10{fill:#ffd8c9;}.cls-11{stroke:#fff;stroke-miterlimit:10;stroke-width:3.68px;opacity:0.1;}.cls-12{fill:#515570;}.cls-13,.cls-15{stroke:#515570;stroke-width:2px;}.cls-14{stroke-width:4.71px;}.cls-15{opacity:0.2;}</style></defs><title/><circle class="cls-1" cx="64" cy="64" r="60"/><circle class="cls-2" cx="64" cy="64" r="48"/><path class="cls-3" d="M99,82a4,4,0,0,1-4-4V34h0a13,13,0,0,0-25.9,0h0l6,48a12,12,0,0,0,24,0Z"/><circle class="cls-4" cx="75" cy="36" r="10"/><path class="cls-3" d="M63,28h0A29.41,29.41,0,0,1,92.41,57.41v6.12A10.94,10.94,0,0,1,81.47,74.47H44.53A10.94,10.94,0,0,1,33.59,63.53V57.41A29.41,29.41,0,0,1,63,28Z"/><circle class="cls-5" cx="85.98" cy="74.31" r="6.43"/><path class="cls-6" d="M64,124a59.62,59.62,0,0,0,33-9.92l-2.66-7.44A10,10,0,0,0,85,100H41.05a10,10,0,0,0-9.42,6.64L29.36,113A59.74,59.74,0,0,0,64,124Z"/><path class="cls-7" d="M82.92,100H43.08a20,20,0,0,0,39.84,0Z"/><path class="cls-8" d="M72,101.25a9,9,0,0,1-18,0c0-5,4-3,9-3S72,96.28,72,101.25Z"/><line class="cls-9" x1="63" x2="63" y1="87.75" y2="101.5"/><circle class="cls-5" cx="40.02" cy="74.31" r="6.43"/><path class="cls-10" d="M63,98.84a23,23,0,0,1-23-23V60.76a23,23,0,0,1,46,0V75.87A23,23,0,0,1,63,98.84Z"/><path class="cls-11" d="M44.82,51A19.9,19.9,0,0,1,62.4,38.54"/><path class="cls-12" d="M88.82,58.82A25.82,25.82,0,0,0,62.27,33c-14.06.39-25.09,12.28-25.09,26.35v4a4.83,4.83,0,0,0,1.48,3.51,5.93,5.93,0,0,0,1.36,1V64a4,4,0,0,1,4-4h5.38a1,1,0,0,0,.9-.55L52,56l1.72,3.45a1,1,0,0,0,.9.55H82a4,4,0,0,1,4,4v3.89a5.93,5.93,0,0,0,1.36-1,4.83,4.83,0,0,0,1.48-3.51Z"/><path class="cls-13" d="M70.67,75.28a3,3,0,0,1,6,0"/><line class="cls-14" x1="62.5" x2="62.5" y1="77.5" y2="81.5"/><line class="cls-15" x1="72" x2="79" y1="68" y2="68"/><path class="cls-13" d="M55,75.28a3,3,0,0,0-6,0"/><line class="cls-15" x1="54" x2="47" y1="68" y2="68"/><path class="cls-3" d="M70.55,86a1,1,0,0,1,.94,1.07,8.56,8.56,0,0,1-17,0A1,1,0,0,1,55.45,86Z"/><path class="cls-4" d="M58,92.91a8.52,8.52,0,0,0,10.08,0C67,91.16,65.17,91,63,91S59,91.16,58,92.91Z"/><path class="cls-8" d="M68,88H58a1.84,1.84,0,0,1-1.73-2H69.77A1.84,1.84,0,0,1,68,88Z"/></svg>
+            <div style="display: flex; flex-wrap: wrap;">
+              <div style="display: flex; font-size: 12px; font-weight: 700; align-items: end;">@calex</div>
+              <div style="flex-basis: 100%; font-size: 10px; text-align: left; font-weight: 300; height: fit-content;" >No Traffic Maker</div>
+            </div>
+            </div>
+       </div>
+     </div>
+   </div>
+ </body>
+</html>
